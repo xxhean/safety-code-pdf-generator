@@ -41,7 +41,7 @@ docker compose up --build -d
 Dockerfile 默认通过国内镜像源获取 Python 基础镜像。如服务器可直接访问 Docker Hub，可使用：
 
 ```bash
-docker compose build --build-arg PYTHON_IMAGE=python:3.12-slim
+docker compose build --build-arg PYTHON_IMAGE=python:3.12-slim --build-arg DEBIAN_MIRROR=
 docker compose up -d
 ```
 

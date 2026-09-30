@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build application image
-        run: docker build --build-arg PYTHON_IMAGE=python:3.12-slim -t safety-code-pdf-generator .
+        run: docker build --build-arg PYTHON_IMAGE=python:3.12-slim --build-arg DEBIAN_MIRROR= -t safety-code-pdf-generator .
