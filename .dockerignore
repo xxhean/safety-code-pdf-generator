@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.git/
+.idea/
+.vscode/
+output/
+tests/
+tmp/
+.env
+.env.*
+README.md

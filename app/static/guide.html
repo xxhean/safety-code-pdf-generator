@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="从湖北省特种设备安全监察系统下载二维码，并批量生成规范打印PDF的完整教程。" />
+    <title>详细使用教程｜特种设备安全码生成器</title>
+    <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/static/guide.css?v=20260930-1" />
+  </head>
+  <body>
+    <header class="guide-topbar">
+      <a class="guide-brand" href="/">
+        <span aria-hidden="true">码</span>
+        <div><strong>特种设备安全码生成器</strong><small>详细使用教程</small></div>
+      </a>
+      <a class="back-tool" href="/">返回生成器</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">完整操作指南</span>
+        <h1>从系统下载二维码，到生成可打印 PDF</h1>
+        <p>按照本页步骤操作，无需安装软件。支持单张保存、批量下载和批量制作标识牌。</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#login">从登录开始</a>
+          <a class="secondary-link" href="/">直接打开生成器</a>
+        </div>
+      </div>
+      <div class="flow-overview" aria-label="流程概览">
+        <div><b>01</b><span>登录系统</span></div><i>→</i>
+        <div><b>02</b><span>下载二维码</span></div><i>→</i>
+        <div><b>03</b><span>上传识别</span></div><i>→</i>
+        <div><b>04</b><span>生成 PDF</span></div>
+      </div>
+    </section>
+
+    <div class="guide-layout">
+      <aside class="toc">
+        <strong>教程目录</strong>
+        <a href="#before">开始前准备</a>
+        <a href="#login">一、登录安全监察系统</a>
+        <a href="#download">二、下载设备二维码</a>
+        <a href="#upload">三、上传并检查二维码</a>
+        <a href="#settings">四、设置标识牌版式</a>
+        <a href="#pdf">五、生成并打印 PDF</a>
+        <a href="#faq">常见问题</a>
+      </aside>
+
+      <main class="guide-content">
+        <section id="before" class="intro-card">
+          <div>
+            <span class="section-tag">开始前准备</span>
+            <h2>准备好两个网站</h2>
+          </div>
+          <div class="site-grid">
+            <article>
+              <b>设备安全监察系统</b>
+              <p>用于登录企业账号、查询设备和下载二维码。</p>
+              <a href="http://119.36.213.116:8090/equsupv/login.html" target="_blank" rel="noopener noreferrer">打开登录网站</a>
+            </article>
+            <article>
+              <b>安全码 PDF 生成器</b>
+              <p>用于识别二维码、选择版式并生成打印文件。</p>
+              <a href="/">打开生成器</a>
+            </article>
+          </div>
+          <p class="notice"><b>注意：</b>账号、密码和统一身份认证均在政府系统中完成。本工具不会获取或保存您的登录信息。</p>
+        </section>
+
+        <section id="login" class="chapter">
+          <div class="chapter-title"><span>一</span><div><p>系统登录</p><h2>登录湖北省特种设备安全监察系统</h2></div></div>
+
+          <article class="step-card">
+            <div class="step-copy"><span>步骤 1</span><h3>选择“企业用户”和“使用单位”</h3><p>打开登录网站，在登录框顶部选择“企业用户”，单位类型选择“使用单位”。然后点击底部的“前往统一身份认证平台登录”。</p></div>
+            <a class="shot" href="/static/guide-assets/01-login.png" target="_blank" aria-label="查看步骤1大图"><img src="/static/guide-assets/01-login.png" alt="企业用户、使用单位及统一身份认证入口位置" loading="lazy" /></a>
+          </article>
+
+          <article class="step-card">
+            <div class="step-copy"><span>步骤 2</span><h3>通过法人账号完成身份认证</h3><p>进入湖北省统一身份认证平台后，选择“法人登录”，输入本单位法人账号和密码，按页面要求完成登录。</p><p class="tip">没有法人账号或无法登录时，请使用页面提供的“找回密码”“登录遇到问题”或“新用户注册”。</p></div>
+            <a class="shot" href="/static/guide-assets/02-unified-auth.png" target="_blank" aria-label="查看步骤2大图"><img src="/static/guide-assets/02-unified-auth.png" alt="湖北省统一身份认证平台法人登录入口" loading="lazy" /></a>
+          </article>
+
+          <article class="step-card">
+            <div class="step-copy"><span>步骤 3</span><h3>进入“使用单位登录”</h3><p>认证成功后会返回角色选择页面。点击绿色的“使用单位登录”，进入企业工作台。</p></div>
+            <a class="shot" href="/static/guide-assets/03-role.png" target="_blank" aria-label="查看步骤3大图"><img src="/static/guide-assets/03-role.png" alt="使用单位登录入口" loading="lazy" /></a>
+          </article>
+        </section>
+
+        <section id="download" class="chapter">
+          <div class="chapter-title"><span>二</span><div><p>二维码下载</p><h2>查找设备并下载安全码图片</h2></div></div>
+
+          <article class="step-card">
+            <div class="step-copy"><span>步骤 4</span><h3>打开“企业设备管理”</h3><p>进入工作台后，在顶部导航栏点击“企业设备管理”。</p></div>
+            <a class="shot" href="/static/guide-assets/04-equipment-menu.png" target="_blank" aria-label="查看步骤4大图"><img src="/static/guide-assets/04-equipment-menu.png" alt="企业设备管理导航位置" loading="lazy" /></a>
+          </article>
+
+          <article class="step-card">
+            <div class="step-copy"><span>步骤 5</span><h3>进入“设备安全码管理”</h3><p>在展开的菜单中找到“设备安全码”，然后点击“设备安全码管理”。</p></div>
+            <a class="shot" href="/static/guide-assets/05-safety-code-menu.png" target="_blank" aria-label="查看步骤5大图"><img src="/static/guide-assets/05-safety-code-menu.png" alt="设备安全码管理菜单位置" loading="lazy" /></a>
+          </article>
+
+          <div class="method-heading"><span>推荐</span><h3>方式 A：批量下载二维码</h3></div>
+          <article class="step-card">
+            <div class="step-copy"><span>步骤 6A</span><h3>筛选设备并点击“安全码批量下载”</h3><p>可先通过设备名称、设备类别、设备代码、安全码等条件缩小范围，点击“查询”确认列表无误，再点击“安全码批量下载”。</p><p class="tip">下载数量较多时，建议按使用单位、场所或维保单位分批处理，后续查找和打印更方便。</p></div>
+            <a class="shot" href="/static/guide-assets/06-batch-download.png" target="_blank" aria-label="查看批量下载大图"><img src="/static/guide-assets/06-batch-download.png" alt="设备安全码列表及批量下载按钮" loading="lazy" /></a>
+          </article>
+
+          <div class="method-heading alt"><span>备选</span><h3>方式 B：单张保存二维码</h3></div>
+          <article class="step-card compact">
+            <div class="step-copy"><span>步骤 6B-1</span><h3>在设备档案中打开“设备详情”</h3><p>如果只需要某一台设备，可在设备档案列表找到目标设备，在右侧操作栏点击“设备详情”。</p></div>
+            <a class="shot" href="/static/guide-assets/07-device-detail.png" target="_blank" aria-label="查看设备详情大图"><img src="/static/guide-assets/07-device-detail.png" alt="设备档案列表中的设备详情按钮" loading="lazy" /></a>
+          </article>
+          <article class="step-card compact">
+            <div class="step-copy"><span>步骤 6B-2</span><h3>点击“保存图片”</h3><p>进入设备详情后，在右上角二维码区域点击“保存图片”。浏览器会把该设备的安全码图片保存到下载目录。</p></div>
+            <a class="shot" href="/static/guide-assets/08-save-image.png" target="_blank" aria-label="查看保存图片大图"><img src="/static/guide-assets/08-save-image.png" alt="设备详情页二维码保存图片按钮" loading="lazy" /></a>
+          </article>
+        </section>
+
+        <section id="upload" class="chapter">
+          <div class="chapter-title"><span>三</span><div><p>上传识别</p><h2>把下载的二维码上传到生成器</h2></div></div>
+          <div class="tool-steps">
+            <article><b>1</b><h3>打开生成器</h3><p>点击本页顶部“返回生成器”，或直接访问安全码 PDF 生成器。</p><a href="/">立即打开</a></article>
+            <article><b>2</b><h3>选择二维码图片</h3><p>点击上传区域选择图片，也可以一次多选、拖入文件，或直接粘贴剪贴板图片。</p></article>
+            <article><b>3</b><h3>等待自动识别</h3><p>系统会自动提取20位安全码，并统计上传、有效、重复和异常数量。</p></article>
+          </div>
+          <p class="notice"><b>识别完成后再继续：</b>“有效”数量应等于“上传”数量，并且“重复”和“异常”均为 0。列表中可逐张移除有问题的图片。</p>
+        </section>
+
+        <section id="settings" class="chapter">
+          <div class="chapter-title"><span>四</span><div><p>版式设置</p><h2>选择排版、尺寸和可选信息</h2></div></div>
+          <div class="option-grid">
+            <article><span>排版模板</span><h3>左竖排 / 右竖排</h3><p>左竖排适合常用标准版；右竖排适合二维码在左、文字在右的版面。右侧预览会同步变化。</p></article>
+            <article><span>标识牌尺寸</span><h3>60×90 / 80×120 / 100×150 mm</h3><p>一般推荐 80×120 mm。请根据实际安装位置和制作要求选择。</p></article>
+            <article><span>救援电话</span><h3>选填</h3><p>需要在标识牌上显示救援电话时填写；不需要时保持为空即可。</p></article>
+            <article><span>页面顺序</span><h3>按安全码排序</h3><p>默认从小到大排序，便于核对和分发；如需保持上传顺序，可取消勾选。</p></article>
+          </div>
+        </section>
+
+        <section id="pdf" class="chapter">
+          <div class="chapter-title"><span>五</span><div><p>生成打印</p><h2>下载 PDF 并按实际尺寸打印</h2></div></div>
+          <ol class="finish-list">
+            <li><b>核对预览</b><span>确认二维码、20位安全码、版式和救援电话显示正确。</span></li>
+            <li><b>生成文件</b><span>点击“生成并下载 PDF”，每张有效二维码会生成一页。</span></li>
+            <li><b>检查页数</b><span>PDF 页数应与有效二维码数量一致。</span></li>
+            <li><b>正确打印</b><span>打印缩放选择“实际大小”或“100%”，不要选择“适合页面”或自动缩放。</span></li>
+          </ol>
+          <div class="print-warning"><strong>打印前建议先试打一页</strong><p>用尺子核对成品宽高是否与所选尺寸一致，确认无误后再批量打印或交给制作单位。</p></div>
+        </section>
+
+        <section id="faq" class="chapter faq">
+          <div class="chapter-title"><span>?</span><div><p>问题排查</p><h2>常见问题</h2></div></div>
+          <details><summary>上传后提示“未识别到二维码”怎么办？</summary><p>优先使用系统直接下载的原始图片，不要使用模糊截图；确认图片没有被聊天软件过度压缩，也没有遮挡二维码三个定位角。</p></details>
+          <details><summary>为什么提示“安全码重复”？</summary><p>同一个安全码被上传了两次。查看列表中的“重复”标记，删除其中一张后重新识别即可。</p></details>
+          <details><summary>新版图片自带文字和编号，会不会重复？</summary><p>不会。生成器会自动识别二维码边界，只截取二维码图案，最终 PDF 中标题和安全码只显示一次。</p></details>
+          <details><summary>PDF 打印出来尺寸不正确怎么办？</summary><p>在打印窗口选择“实际大小”或“100%”，关闭“适合页面”“缩小超大页面”等选项，并检查打印机驱动是否还有二次缩放。</p></details>
+        </section>
+
+        <section class="help-card">
+          <div><span>仍然遇到问题？</span><h2>联系作者协助处理</h2><p>添加微信时请备注“安全码工具”，并说明卡在哪一步。</p></div>
+          <strong>微信：591855652</strong>
+        </section>
+      </main>
+    </div>
+
+    <footer>本教程仅用于说明操作流程，具体页面和权限以湖北省特种设备安全监察系统实际显示为准。</footer>
+  </body>
+</html>
